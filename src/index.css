@@ -6,55 +6,55 @@
 
 @layer base {
   :root {
-    /* Gaming Dark Theme */
-    --background: 220 13% 8%;
-    --foreground: 210 40% 98%;
+    /* Professional Dark Theme */
+    --background: 222 14% 6%;
+    --foreground: 210 15% 92%;
 
-    --card: 220 13% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 14% 8%;
+    --card-foreground: 210 15% 92%;
 
-    --popover: 220 13% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 14% 8%;
+    --popover-foreground: 210 15% 92%;
 
-    /* Gaming Cyan Primary */
-    --primary: 189 100% 50%;
-    --primary-foreground: 220 13% 8%;
+    /* Professional Blue Primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 14% 6%;
 
-    /* Gaming Secondary */
-    --secondary: 220 13% 15%;
-    --secondary-foreground: 210 40% 98%;
+    /* Professional Secondary */
+    --secondary: 222 14% 12%;
+    --secondary-foreground: 210 15% 92%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 222 14% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    /* Gaming Accent - Purple */
-    --accent: 270 95% 75%;
-    --accent-foreground: 220 13% 8%;
+    /* Professional Accent - Subtle Blue */
+    --accent: 213 27% 84%;
+    --accent-foreground: 222 14% 6%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 15% 92%;
 
-    --border: 220 13% 20%;
-    --input: 220 13% 15%;
-    --ring: 189 100% 50%;
+    --border: 222 14% 18%;
+    --input: 222 14% 12%;
+    --ring: 217 91% 60%;
 
-    /* Gaming Specific Colors */
-    --gaming-cyan: 189 100% 50%;
-    --gaming-purple: 270 95% 75%;
-    --gaming-yellow: 51 100% 50%;
-    --gaming-pink: 330 100% 70%;
-    --gaming-green: 120 100% 50%;
+    /* Professional Colors */
+    --gaming-cyan: 217 91% 60%;
+    --gaming-purple: 234 89% 74%;
+    --gaming-yellow: 43 74% 66%;
+    --gaming-pink: 339 82% 78%;
+    --gaming-green: 142 76% 36%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(189 100% 50% / 0.1), hsl(270 95% 75% / 0.1));
-    --gradient-card: linear-gradient(135deg, hsl(220 13% 10%), hsl(220 13% 15%));
-    --gradient-primary: linear-gradient(135deg, hsl(189 100% 50%), hsl(270 95% 75%));
-    --gradient-glow: linear-gradient(135deg, hsl(189 100% 50% / 0.3), hsl(270 95% 75% / 0.3));
+    /* Professional Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(222 14% 8% / 0.8), hsl(217 91% 60% / 0.05));
+    --gradient-card: linear-gradient(135deg, hsl(222 14% 8%), hsl(222 14% 12%));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(234 89% 74%));
+    --gradient-glow: linear-gradient(135deg, hsl(217 91% 60% / 0.1), hsl(234 89% 74% / 0.1));
     
-    /* Shadows */
-    --shadow-glow: 0 0 20px hsl(189 100% 50% / 0.3);
-    --shadow-card: 0 10px 30px hsl(220 13% 5% / 0.5);
-    --shadow-intense: 0 0 40px hsl(189 100% 50% / 0.5);
+    /* Professional Shadows */
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.15);
+    --shadow-card: 0 4px 20px hsl(222 14% 4% / 0.4);
+    --shadow-intense: 0 0 40px hsl(217 91% 60% / 0.2);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -143,25 +143,25 @@
            hover:shadow-[var(--shadow-glow)] hover:scale-105;
   }
   
-  /* Glow Effects */
+  /* Professional Glow Effects */
   .glow-cyan {
-    @apply shadow-[0_0_20px_hsl(189_100%_50%_/_0.3)];
+    @apply shadow-[0_0_20px_hsl(217_91%_60%_/_0.15)];
   }
   
   .glow-purple {
-    @apply shadow-[0_0_20px_hsl(270_95%_75%_/_0.3)];
+    @apply shadow-[0_0_20px_hsl(234_89%_74%_/_0.15)];
   }
   
-  /* Gradient Text */
+  /* Professional Gradient Text */
   .gradient-text {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
   
-  /* Hero Section */
+  /* Professional Hero Section */
   .hero-bg {
     background: var(--gradient-hero), 
-                radial-gradient(circle at 20% 50%, hsl(189 100% 50% / 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, hsl(270 95% 75% / 0.1) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, hsl(217 91% 60% / 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, hsl(234 89% 74% / 0.08) 0%, transparent 50%);
   }
 }
 
@@ -185,8 +185,8 @@
   }
   
   @keyframes pulse-glow {
-    from { box-shadow: 0 0 20px hsl(189 100% 50% / 0.3); }
-    to { box-shadow: 0 0 30px hsl(189 100% 50% / 0.6); }
+    from { box-shadow: 0 0 20px hsl(217 91% 60% / 0.15); }
+    to { box-shadow: 0 0 30px hsl(217 91% 60% / 0.25); }
   }
   
   @keyframes slide-up {
